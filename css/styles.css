@@ -1,0 +1,34 @@
+.body {
+  margin-top: 30px;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* position fixeddan elementlarni sahifada qotirib qo'yishda ishlatamiz. Masalan saytlarda header qismi yoki pastki qismida turgan habar oynasi yoki telefoncha rasmi
+position: fixed; qilingan bo'ladi*/
+/* position: fixed; bo'lgan element uning otasi positioni qanday bo'lishidan qatiy nazar bodyga bisbatan joylashadi */
+/* position: fixed; bo'lgan element o'z o'rni va o'lchamini saqlab qolmaydi undagi konten o'chamiga moslashadi va bodyga nisbatan joylashadi */
+/* position: fixed; bo'lgan elementni boshqa elemetn orqasida qolib ketmasligi uchun uning z-index ini kattaroq boerib qo'yish kerak va elementlarda sal ajralib turishi uchun bodyga margin berish kerak */
+/* top, right, bottom, left boyruqlarini oladi */
+.box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: gold;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Agar box elementimiz eng tepada emas o'rtaroqda turgan bo'lsa u elem sahifani tepaga chiqarganimizda  position: sticky; bo'lgan elemeni tepaga kelganda yoki pastga kelganda tepaga chiqib ketmaydi yoki pastga tushib ketmaydi sahifani tepasiga yoki pastga qotib turadi qolgan elementlar scrol bo'ladi*/
